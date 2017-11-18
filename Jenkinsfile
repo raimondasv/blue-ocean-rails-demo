@@ -2,20 +2,10 @@ pipeline {
     agent any 
 
     stages {
-        stage('Build') { 
+        stage('Bundler') { 
             steps { 
-                sh 'make' 
-            }
-        }
-        stage('Test'){
-            steps {
-                sh 'make check'
-                junit 'reports/**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'make publish'
+                sh '''rbenv exec gem install bundler
+rbenv exec bundle install --path=~/.bundle'''
             }
         }
     }
