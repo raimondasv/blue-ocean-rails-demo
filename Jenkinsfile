@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh '''rbenv exec rspec --format RspecJunitFormatter --out spec/rspec.xml '''
+                sh '''rbenv exec rspec spec/'''
                 junit 'spec/*.xml'
             }
         }
