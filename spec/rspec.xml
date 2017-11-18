@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="27" failures="2" errors="0" time="0.542494" timestamp="2017-11-18T21:32:12+02:00">
+  <!-- Randomized with seed 4142 -->
+  <properties/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController GET #index returns a success response" file="./spec/controllers/users_controller_spec.rb" time="0.031757"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController GET #show returns a success response" file="./spec/controllers/users_controller_spec.rb" time="0.010280"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController GET #new returns a success response" file="./spec/controllers/users_controller_spec.rb" time="0.005638"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController GET #edit returns a success response" file="./spec/controllers/users_controller_spec.rb" time="0.007297"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController POST #create with valid params creates a new User" file="./spec/controllers/users_controller_spec.rb" time="0.013848"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController POST #create with valid params redirects to the created user" file="./spec/controllers/users_controller_spec.rb" time="0.006166"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController POST #create with invalid params returns a success response (i.e. to display the 'new' template)" file="./spec/controllers/users_controller_spec.rb" time="0.020095">
+    <failure message="expected `#&lt;ActionDispatch::TestResponse:0x007fb0075af780 @mon_owner=nil, @mon_count=0, @mon_mutex=#&lt;Thread::Mu...:Headers:0x007fb0022db9f0 @req=#&lt;ActionController::TestRequest:0x007fb0075af910 ...&gt;&gt;, @variant=[]&gt;&gt;.success?` to return true, got false" type="RSpec::Expectations::ExpectationNotMetError">
+      <![CDATA[expected `#<ActionDispatch::TestResponse:0x007fb0075af780 @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mu...:Headers:0x007fb0022db9f0 @req=#<ActionController::TestRequest:0x007fb0075af910 ...>>, @variant=[]>>.success?` to return true, got false
+./spec/controllers/users_controller_spec.rb:92:in `block (4 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController PUT #update with valid params updates the requested user" file="./spec/controllers/users_controller_spec.rb" time="0.006676">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController PUT #update with valid params redirects to the user" file="./spec/controllers/users_controller_spec.rb" time="0.005452"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController PUT #update with invalid params returns a success response (i.e. to display the 'edit' template)" file="./spec/controllers/users_controller_spec.rb" time="0.006724">
+    <failure message="expected `#&lt;ActionDispatch::TestResponse:0x007fb00745a588 @mon_owner=nil, @mon_count=0, @mon_mutex=#&lt;Thread::Mu...:Headers:0x007fb007452108 @req=#&lt;ActionController::TestRequest:0x007fb00745a718 ...&gt;&gt;, @variant=[]&gt;&gt;.success?` to return true, got false" type="RSpec::Expectations::ExpectationNotMetError">
+      <![CDATA[expected `#<ActionDispatch::TestResponse:0x007fb00745a588 @mon_owner=nil, @mon_count=0, @mon_mutex=#<Thread::Mu...:Headers:0x007fb007452108 @req=#<ActionController::TestRequest:0x007fb00745a718 ...>>, @variant=[]>>.success?` to return true, got false
+./spec/controllers/users_controller_spec.rb:121:in `block (4 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController DELETE #destroy destroys the requested user" file="./spec/controllers/users_controller_spec.rb" time="0.005719"/>
+  <testcase classname="spec.controllers.users_controller_spec" name="UsersController DELETE #destroy redirects to the users list" file="./spec/controllers/users_controller_spec.rb" time="0.004503"/>
+  <testcase classname="spec.helpers.users_helper_spec" name="UsersHelper add some examples to (or delete) /Users/raimondasv/magic/blue-ocean-rails-demo/spec/helpers/users_helper_spec.rb" file="./spec/helpers/users_helper_spec.rb" time="0.000010">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.models.user_spec" name="User add some examples to (or delete) /Users/raimondasv/magic/blue-ocean-rails-demo/spec/models/user_spec.rb" file="./spec/models/user_spec.rb" time="0.000004">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.requests.users_spec" name="Users GET /users works! (now write some real specs)" file="./spec/requests/users_spec.rb" time="0.299677"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #index" file="./spec/routing/users_routing_spec.rb" time="0.000859"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #new" file="./spec/routing/users_routing_spec.rb" time="0.000760"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #show" file="./spec/routing/users_routing_spec.rb" time="0.000700"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #edit" file="./spec/routing/users_routing_spec.rb" time="0.000627"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #create" file="./spec/routing/users_routing_spec.rb" time="0.000660"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #update via PUT" file="./spec/routing/users_routing_spec.rb" time="0.000655"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #update via PATCH" file="./spec/routing/users_routing_spec.rb" time="0.000696"/>
+  <testcase classname="spec.routing.users_routing_spec" name="UsersController routing routes to #destroy" file="./spec/routing/users_routing_spec.rb" time="0.000948"/>
+  <testcase classname="spec.views.users.edit" name="users/edit renders the edit user form" file="./spec/views/users/edit.html.erb_spec.rb" time="0.051665"/>
+  <testcase classname="spec.views.users.index" name="users/index renders a list of users" file="./spec/views/users/index.html.erb_spec.rb" time="0.019724"/>
+  <testcase classname="spec.views.users.new" name="users/new renders new user form" file="./spec/views/users/new.html.erb_spec.rb" time="0.017865"/>
+  <testcase classname="spec.views.users.show" name="users/show renders attributes in &lt;p&gt;" file="./spec/views/users/show.html.erb_spec.rb" time="0.017702"/>
+</testsuite>
