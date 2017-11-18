@@ -5,7 +5,6 @@ pipeline {
         stage('Bundler') { 
             steps { 
                 sh '''rbenv exec gem install bundler
-                      rbenv exec gem install rspec_junit_formatter
                       rbenv exec bundle install --path=~/.bundle'''
             }
         }
